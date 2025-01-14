@@ -1,9 +1,8 @@
 ## Solving maze using Double Q learning
 
-<div align="center"> <img src="images/agent_run.gif" alt="policy" /> </div>
+<div align="center"> <img src="images/agent_run.gif" alt="policy" /> </div>  
 
-
-
+---
 Q-learning has a good exploration-exploitation tradeoff compared to on-policy methods used in reinforcement learning. However, Q-learning suffers from overestimation bias where it uses the maximum Q-value of the next state-action pair for the TD update.
 
 $$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] $$

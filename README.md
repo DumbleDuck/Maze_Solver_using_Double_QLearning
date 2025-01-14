@@ -1,8 +1,8 @@
-## Solving a maze using Double Q learning:
+## Solving maze using Double Q learning
 
 $$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] $$
 
-Q-learning has a good exploration-exploitation tradeoff compared to on-policy methods used in Reinforcement Learning. However, Q-learning suffers from overestimation bias where it uses the maximum Q-value of the next state-action pair for the TD update.
+Q-learning has a good exploration-exploitation tradeoff compared to on-policy methods used in reinforcement learning. However, Q-learning suffers from overestimation bias where it uses the maximum Q-value of the next state-action pair for the TD update.
 
 This model uses Double Q-learning to eliminate this problem by incorporating randomness. It trains the agent to solve the `FrozenLake` environment from OpenAI's Gymnasium library by using two Q functions that are updated randomly according to the following update rule:
 
@@ -29,4 +29,4 @@ $P = \frac{\epsilon}{|\mathcal{A}|}$ for remaining actions, where $|\mathcal{A}|
 
 - Q-value table is plotted after the training and arrows are used to denote the favourability of an action. 
 
-![Q-value plot](images/Q_Value_plot.png)
+<div align="center"> <img src="images/Q_Value_plot.png" alt="Q-value plot" /> </div>

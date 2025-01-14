@@ -15,7 +15,7 @@ If \( Q_B \), then:
 $$ Q_B(s, a) \leftarrow Q_B(s, a) + \alpha \left[ r + \gamma Q_A(s', \text{argmax}_{a'} Q_B(s', a')) - Q_B(s, a) \right] $$
 
 
-- `agent()` Class:
+- `agent()` class:
 1. `learning_rate`: determines how fast model learns. ($\alpha$)
 2. `gamma`: discount factor determines how much importance should future rewards have. ($\gamma$) 
 3. `epsilon`: used in $\epsilon$-greedy policy to tune the exploration-exploitation tradeoff. As epsilon decrease, the policy becomes increasingly greedy.

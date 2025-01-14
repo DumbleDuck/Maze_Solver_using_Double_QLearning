@@ -25,7 +25,7 @@ $$ Q_B(s, a) \leftarrow Q_B(s, a) + \alpha \left[ r + \gamma Q_A(s', \text{argma
 4. `q` & `dq`: two Q functions.
 
 5. `e_greedy()`: given a value of `epsilon`, it chooses action according to the following probabilities: 
-$P = 1 - \epsilon + \frac{\epsilon}{|\mathcal{A}|}$ for best-known action 
+$P = 1 - \epsilon + \frac{\epsilon}{|\mathcal{A}|}$ for best-known action and  
 $P = \frac{\epsilon}{|\mathcal{A}|}$ for remaining actions, where $|\mathcal{A}|$ is the total number of actions.
 6. `get_best_action`: chooses action with the best Q-value for a given state.
 7. `run_policy`: plays the learnt policy.
